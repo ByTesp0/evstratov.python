@@ -22,5 +22,5 @@ k = 0
 while s <= 1100:
     s += s * (p / 100)
     k += 1
-print(s)
-print(k)
+print(f'конечная сумма', s)
+print(f'колличество месяцев ', k)
