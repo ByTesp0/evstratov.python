@@ -18,17 +18,14 @@ while type(user_measure) != float:
 
 if user_num == 1:
     user_measure = user_measure / 10
-    print(user_measure)
 elif user_num == 2:
     user_measure = user_measure * 1000
-    print(user_measure)
 elif user_num == 3:
     print(user_measure)
 elif user_num == 4:
     user_measure = user_measure / 1000
-    print(user_measure)
 elif user_num == 5:
     user_measure = user_measure / 100
-    print(user_measure)
 else:
     print('Введено неверное число')
+print(user_measure)
