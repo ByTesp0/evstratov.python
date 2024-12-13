@@ -4,15 +4,15 @@ while type(A) != int:
         A = int(A)
     except ValueError:
         print('Введено неверное значение ')
-        print('Введите первое число ')
+        A = (input('Введите первое число: '))
 
 B = (input('Введите второе число: '))
 while type(B) != int:
     try:
-        A = int(B)
+        B = int(B)
     except ValueError:
         print('Введено неверное значение ')
-        print('Введите второе число ')
+        B = (input('Введите второе число: '))
 
 a = A
 result = 0
