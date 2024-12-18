@@ -3,8 +3,9 @@
 # звездочек.
 a = int(input("Введите количество строк: "))
 
-def strochki(a):
-    for i in range(1, a + 1):
-        print("*" * i)
+def strochki(a, i = 1):
+   if i <= a:
+       print('*' * i)
+       strochki(a, i + 1)
 
 strochki(a)
