@@ -31,4 +31,7 @@ for i in range(1, len(user_list)):
         schet += 1
         flag = False
 
+if flag:
+    schet += 1
+
 print(schet)
