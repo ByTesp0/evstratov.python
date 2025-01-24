@@ -6,13 +6,13 @@
 a = 'апельсины 45 991 63 100 12 яблоки 13 47 26 0 16'
 lst_a = a.split()
 
-oranges_lst_a = lst_a[0:6]
-apples_lst_a = lst_a[6:12]
+num1 = lst_a[0]
+num2 = lst_a[1:6]
+num3 = lst_a[6]
+num4 = lst_a[7:]
 
-new_lst_a = []
-
-new_lst_a.append(oranges_lst_a)
-new_lst_a.append(apples_lst_a)
-print(new_lst_a)
-
+orgs = dict.fromkeys([num1], num2)
+apls = dict.fromkeys([num3], num4)
+print(orgs)
+print(apls)
 
