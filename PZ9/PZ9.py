@@ -18,7 +18,7 @@ def funkc(a, b):
     lst = []
     for i in range(len(nums)):
         lst.append(int(nums[i]))
-        print(lst)
+        # print(lst)
     b = 0
     for i in lst:
         b = (b + i)
