@@ -8,3 +8,18 @@ pyat = {'мясо', 'молоко', 'сыр'}
 krest = {'молоко', 'творог', 'сыр', 'сахар'}
 s = {'сыр'}
 
+naz = ['магнит', 'пятёрочка', 'перекрёсток']
+lst = []
+
+
+def sir(a, i):
+    b = a & s
+    if b != s:
+        lst.append(naz[i])
+
+
+sir(magnit, 0)
+sir(pyat, 1)
+sir(krest, 2)
+
+print(lst)
