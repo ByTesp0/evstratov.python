@@ -37,3 +37,6 @@ min_ind = a.index(min_val)
 f2 = open('digits2.txt', 'a')
 f2.write(str(min_ind))
 f2.close()
+
+f1 = open('digits1.txt')
+
