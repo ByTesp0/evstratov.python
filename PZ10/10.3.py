@@ -13,14 +13,14 @@ naz = ['магнит', 'пятёрочка', 'перекрёсток']
 lst = []
 
 
-def sir(a, i):
+def sol(a, i):
     b = a & s
     if b == s:
         lst.append(naz[i])
 
 
-sir(magnit, 0)
-sir(pyat, 1)
-sir(krest, 2)
+sol(magnit, 0)
+sol(pyat, 1)
+sol(krest, 2)
 
 print(lst)
