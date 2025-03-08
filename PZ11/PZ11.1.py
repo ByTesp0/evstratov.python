@@ -8,6 +8,7 @@
 # Сумма элементов больших 10 во второй половине:
 
 lst = ['100 14 -20 33 11 82']
+slag = []
 
 f1 = open('digits1.txt', 'w')
 f1.writelines(lst)
@@ -36,7 +37,18 @@ min_val = min(a)
 min_ind = a.index(min_val)
 f2 = open('digits2.txt', 'a')
 f2.write(str(min_ind))
+f2.write('\n')
+f2.write('Сумма элементов больших 10 во второй половине: ')
 f2.close()
 
-f1 = open('digits1.txt')
+sum = 0
+b = len(a) // 2
+for i in a[b:]:
+    if i > 10:
+        slag.append(i)
+for i in slag:
+    sum += i
 
+f2 = open('digits2.txt', 'a')
+f2.write(str(sum))
+f2.close()
