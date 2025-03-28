@@ -16,14 +16,10 @@ for i in open('text18-8.txt', encoding='utf-16'):
             schet += 1
 print(schet)
 
-str = 'с'
-
-f1 = open('text18-8.txt', encoding='utf-16')
-l = f1.readlines()
-for i in l:
-    if i == str:
-        i.replace('с', '_')
-        f2 = open('exceptc.txt', 'w')
-        f2.writelines(i)
-        f2.close()
-
+f1 = open('text18-8.txt', 'r', encoding='utf-16')
+text = f1.read()
+new_text = text.replace('с', '_')
+f1.close()
+f2 = open('exceptc.txt', 'w', encoding='utf-16')
+f2.write(new_text)
+f2.close()
