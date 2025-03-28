@@ -4,9 +4,9 @@
 # текста.
 
 f1 = open('text18-8.txt', encoding='utf-16')
-l = f1.readlines()
+for i in f1:
+    print(i, end='')
 f1.close()
-print(l)
 
 lst = ('а', 'б', 'в', 'г')
 schet = 0
@@ -14,7 +14,7 @@ for i in open('text18-8.txt', encoding='utf-16'):
     for n in i:
         if n == lst[0] or n == lst[1] or n == lst[2] or n == lst[3]:
             schet += 1
-print(schet)
+print('\n', schet)
 
 f1 = open('text18-8.txt', 'r', encoding='utf-16')
 text = f1.read()
