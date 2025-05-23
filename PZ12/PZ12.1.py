@@ -4,9 +4,8 @@
 import random
 
 kolvo = int(input('количество симвлов: '))
-prob = [random.randint(1,100) for i in range(0, kolvo)]
+prob = [random.randint(1,10) for i in range(0, kolvo)]
 print(prob)
 
-lst = [ for i in prob]
-
-print(lst)
+lst = [prob[i] * prob[i + 1] for i in range(len(prob) - 1)]
+print(len(list(filter(lambda x: x % 3 == 0, lst))))
