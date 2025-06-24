@@ -18,7 +18,7 @@ print('\n', schet)
 
 f1 = open('text18-8.txt', 'r', encoding='utf-16')
 text = f1.read()
-new_text = text.replace('с', '_')
+new_text = text.replace('с', '')
 f1.close()
 f2 = open('except.txt', 'w', encoding='utf-16')
 f2.write(new_text)
