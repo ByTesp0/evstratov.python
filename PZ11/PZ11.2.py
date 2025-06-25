@@ -16,6 +16,16 @@ for i in open('text18-8.txt', encoding='utf-16'):
             schet += 1
 print('\n', schet)
 
+s = ''
+f1 = open('text18-8.txt', 'r',encoding='utf-16')
+for i in f1:
+    i = i.lower()
+    s = s + i 
+f1.close()
+f1 = open('text18-8.txt', 'w',encoding='utf-16')
+f1.write(s)
+f1.close()
+
 f1 = open('text18-8.txt', 'r', encoding='utf-16')
 text = f1.read()
 new_text = text.replace('с', '')

@@ -12,13 +12,13 @@ def laable(text_primer, row_primer):
 
 root = Tk()
 root.title("Sign Up")
-root.geometry('410x440')
+root.geometry('520x440')
 
 laable("First Name", 1)
 laable("Last Name", 2)
 laable("Screen Name", 3)
 
-#Date 0f Birth ОГРОМНЫЙ по коду
+
 Label(text = "Date of Birth").grid(row = 4, column = 0, sticky = "e", ipadx = 15)
 month = ["January", "February", "March", "April", "May", "June", "July",
     "August", "September", "October", "November", "December"]
@@ -39,7 +39,7 @@ for i in range(41):
 combobox2 = ttk.Combobox(values=goda, width = 5)
 combobox2.grid(row = 4, column = 3, pady = 5)
 
-#GENDER
+
 Label(text = "Gender").grid(row = 5, column = 0, sticky = "e", ipadx = 15)
 var = IntVar()
 rbutton1 = Radiobutton(root, text='Male', variable=var, value=1)
@@ -47,7 +47,7 @@ rbutton2 = Radiobutton(root, text='Female', variable=var, value=2)
 rbutton1.grid(row = 5, column = 1, sticky = "w", pady = 5)
 rbutton2.grid(row = 5, column = 2, sticky = "w", pady = 5)
 
-#COUNTRY
+
 Label(text = "Country").grid(row = 6, column = 0, sticky = "e", ipadx = 15)
 country = ["USA", "RUSSIA", "JAPAN"]
 combobox_coun = ttk.Combobox(values=country)
